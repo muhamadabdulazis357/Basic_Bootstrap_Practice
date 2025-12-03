@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Noto+Serif:wght@400&family=Noto+Serif+Old+Uyghur&family=Zain:wght@700&family=Luckiest+Guy&family=Comic+Relief:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+    padding-top: 56px;
+}
+
+/* .jumbotron {
+    background-color: cadetblue;
+    text-shadow: #000 1px 1px;
+} */
+
+.background-header {
+    background-image: url('image/banner.png');
+    background-color: #fafbfc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-shadow: #000 1px 1px;
+}
+
+/* .btn-primer {
+    background-color: #00bd8e;
+    border-color: #0b9b6b;
+    color: #fff;
+    text-shadow: none;
+}
+
+.btn-primer:hover {
+    background-color: #038c6a;
+    border-color: #038c6a;
+    color: #fff;
+    text-shadow: none;
+} */
+
+.navbar-light {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 18px 0;
+    transition: all 0.35s ease;
+}
+
+.navbar-light.flex-shrink {
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 6px 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+
+.navbar-toggler {
+   border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+    padding: 8px 12px;
+    margin-left: 8px;
+    transition: 0.3s ease;
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #00b4d8 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #00b4d8;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+
+.display-3 {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    color: #53629E;
+}
+
+.lead {
+    font-family: "Noto Serif", sans-serif;
+    font-weight: 400;
+    color: #53629E;
+    text-shadow: none;
+}
+
+.btn {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+}
+
+.service-style {
+    margin-top: 15px;
+    background-color: #fafbfc;
+}
+
+.col-12 h2 {
+    font-family: "Noto Serif Old Uyghur", serif;
+    font-weight: 400;
+}
+
+.col-sm-6 h3 {
+     font-family: "Zain", sans-serif;
+    font-weight: 700;
+}
+
+.col-sm-6 p {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+}
+
+.text-green {
+    color: #0b9b6b;
+}
+
+/* .bg-red {
+    background-color: #f25757;
+}
+
+.bg-red:hover {
+    background-color: #b33131;
+    border-color: #9b2626;
+    color: #fff;
+    text-shadow: none;
+} */
+
+.col-12 h2:before,
+.col-12 h2:after {
+    background-color: #0b9b6b;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.col-12 h2::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.col-12 h2::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+
+    </style>
+</head>
+<body>
+    <!--Navigasi Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top" style="background-color: #198de0;" data-bs-theme="light">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img src="image/logo.png" alt="Logo Codepolitan"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#product" class="nav-link">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!--Header-->
+    <header class="background-header">
+        <div class="container-fluid text-center py-5 position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-3">SOLUSI TERBAIK BELAJARMU</h1>
+            <p class="lead fw-bold">
+                Kami menyediakan banyak modul yang kamu butuhkan untuk belajar pemograman dari tingkat dasar sampai mahir.
+            </p>
+            <p class="d-flex justify-content-center align-items-center gap-2 flex-wrap">
+                <a href="#" class="btn btn-success btn-lg" style="text-shadow: none;" role="button">Gabung Sekarang</a>
+                <a href="#" class="btn btn-secondary btn-lg" style="text-shadow: none;" role="button">Pelajari Dulu</a>
+            </p>
+        </div>
+    </header>
+
+
+    <!--Service-->
+    <section id="service" class="container-fluid service-style">
+         <div class="row text-center">
+            <div class="col-12 pb-4">
+                <h2 class="display-6 mt-4">Mengapa Memilih Kami?</h2>
+            </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+                <i class="fa-classic fa-solid fa-circle fa-stack-2x text-green"></i>
+                <i class="fa-classic fa-solid fa-list fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-4 text-green">Fasilitas Oke</h3>
+            <p>Fasilitas yang kami sediakan sangat lengkap dan nyaman</p>
+         </div>  
+
+         <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+                <i class="fa-classic fa-solid fa-circle fa-stack-2x text-green"></i>
+                <i class="fa-classic fa-solid fa-laptop-code fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-4 text-green">Modul Lengkap</h3>
+            <p>Lebih dari 2000 modul tersedia di tempat kami</p>
+         </div>  
+
+         <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+                <i class="fa-classic fa-solid fa-circle fa-stack-2x text-green"></i>
+                <i class="fa-classic fa-solid fa-money-bill fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-4 text-green">Biaya Terjangkau</h3>
+            <p>Biaya sangat terjangkau</p>
+         </div>
+
+         <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+                <i class="fa-classic fa-solid fa-circle fa-stack-2x text-green"></i>
+                <i class="fa-classic fa-solid fa-chart-line fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-4 text-green">Terarah</h3>
+            <p>Sistem pembelajaran kami cukup terarah dan mudah</p>
+         </div>
+
+         <div class="col-12 pt-3 mb-5">
+            <a href="#" class="btn btn-danger text-white bg-red btn-lg" target="_self" role="button">Service Lainnya</a>
+         </div>
+        </div>     
+    </section>
+
+    <!--Product-->
+    <section id="product">
+        .............
+    </section>
+
+    <!--About-->
+    <section id="about">
+        .............
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+        .............
+    </section>
+    
+
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2025 Dicoding. All rights reserved.</p>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+        <script>
+            window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar-light");
+            
+            if (window.scrollY > 60) {
+                navbar.classList.add("flex-shrink");
+            } else {
+                navbar.classList.remove("flex-shrink");
+            }
+        });
+        </script>
+</body>
+</html>

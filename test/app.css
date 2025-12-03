@@ -1,0 +1,166 @@
+body {
+    padding-top: 56px;
+}
+
+/* .jumbotron {
+    background-color: cadetblue;
+    text-shadow: #000 1px 1px;
+} */
+
+.background-header {
+    background-image: url('image/banner.png');
+    background-color: #fafbfc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-shadow: #000 1px 1px;
+}
+
+/* .btn-primer {
+    background-color: #00bd8e;
+    border-color: #0b9b6b;
+    color: #fff;
+    text-shadow: none;
+}
+
+.btn-primer:hover {
+    background-color: #038c6a;
+    border-color: #038c6a;
+    color: #fff;
+    text-shadow: none;
+} */
+
+.custom-navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 18px 0;
+    transition: all 0.35s ease;
+}
+
+.custom-navbar.flex-shrink {
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 6px 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+
+.navbar-toggler {
+   border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+    padding: 8px 12px;
+    margin-left: 8px;
+    transition: 0.3s ease;
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #00b4d8 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #00b4d8;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+
+.display-3 {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    color: #53629E;
+}
+
+.lead {
+    font-family: "Noto Serif", sans-serif;
+    font-weight: 400;
+    color: #53629E;
+    text-shadow: none;
+}
+
+.btn {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+}
+
+.service-style {
+    margin-top: 15px;
+    background-color: #fafbfc;
+}
+
+.col-12 h2 {
+    font-family: "Noto Serif Old Uyghur", serif;
+    font-weight: 400;
+}
+
+.col-sm-6 h3 {
+     font-family: "Zain", sans-serif;
+    font-weight: 700;
+}
+
+.col-sm-6 p {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+}
+
+.text-green {
+    color: #0b9b6b;
+}
+
+/* .bg-red {
+    background-color: #f25757;
+}
+
+.bg-red:hover {
+    background-color: #b33131;
+    border-color: #9b2626;
+    color: #fff;
+    text-shadow: none;
+} */
+
+.col-12 h2:before,
+.col-12 h2:after {
+    background-color: #0b9b6b;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.col-12 h2::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.col-12 h2::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
