@@ -1,2 +1,2 @@
-# LathanBOOTSTRAPDasar
+# LatihanBOOTSTRAPDasar
 Belajar BOOTSTRAP Dasar
