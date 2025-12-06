@@ -1,2 +1,2 @@
-# LatihanBOOTSTRAPDasar
-Belajar BOOTSTRAP Dasar
+# Basic Bootstrap Practice
+Basic Bootstrap Learn
